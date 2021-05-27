@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'css-image-example'`, () => {
+  it(`should have as title 'css-background-image-tutorial'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('css-image-example');
+    expect(app.title).toEqual('css-image');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('css-image-example app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('css-image app is running!');
   });
 });
